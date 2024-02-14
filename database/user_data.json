@@ -1,0 +1,27 @@
+[
+         {
+                  "fname": "foo",
+                  "lname": "boo",
+                  "age": 21,
+                  "num": 222222222222,
+                  "district": "vellore",
+                  "state": "tn"
+         },
+         {
+                  "fname": "hello",
+                  "lname": "word",
+                  "age": 22,
+                  "num": 1234567890,
+                  "district": "vellore",
+                  "state": "tamil nadu"
+         },
+         {
+                  "fname": "Test",
+                  "lname": "1",
+                  "age": 19,
+                  "num": 1234567890,
+                  "district": "banglore",
+                  "state": "karnataka"
+         }
+         
+]
