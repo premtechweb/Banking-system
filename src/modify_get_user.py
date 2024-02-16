@@ -1,7 +1,7 @@
 import json
-from get_user_data import get_user_name, insert_user_data
+from get_user_data import insert_user_data{insert_user_data(user_data={})}
 
-def load_user_data(file_name="./database/user_data.json"):
+def load_user_data(file_name="../database/user_data.json"):
     try:
         with open(file_name, "r") as file:
             data = json.load(file)
@@ -15,7 +15,7 @@ def find_user_by_account_num(account_num, user_data):
             return user
     return None
 
-def modify_user_data(account_num, file_name="./database/user_data.json"):
+def modify_user_data(account_num, file_name="../database/user_data.json"):
     user_data = load_user_data(file_name)
 
     user_to_modify = find_user_by_account_num(account_num, user_data)
@@ -55,3 +55,4 @@ def modify_user_data(account_num, file_name="./database/user_data.json"):
 if __name__ == "__main__":
     account_num_to_modify = int(input("Enter the account number of the user to modify: "))
     modify_user_data(account_num_to_modify)
+
