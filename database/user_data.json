@@ -22,6 +22,40 @@
                   "num": 1234567890,
                   "district": "banglore",
                   "state": "karnataka"
+         },
+         {
+                  "fname": "suriya",
+                  "lname": "bro",
+                  "age": 12,
+                  "num": 345678984,
+                  "district": "banglore",
+                  "state": "ka"
+         },
+         {
+                  "account_num": 414204974,
+                  "fname": "raju",
+                  "lname": "bai",
+                  "age": 87,
+                  "num": 124456789876,
+                  "district": "mumbai",
+                  "state": "hy"
+         },
+         {
+                  "account_num": 1813540133,
+                  "fname": "ram",
+                  "lname": "key",
+                  "age": 34,
+                  "num": 858943596,
+                  "district": "kovi",
+                  "state": "tn"
+         },
+         {
+                  "account_num": 3207144409,
+                  "fname": "selva",
+                  "lname": "kumar",
+                  "age": 23,
+                  "num": 874356436594,
+                  "district": "kovi",
+                  "state": "TN"
          }
-         
 ]

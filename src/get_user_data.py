@@ -1,17 +1,19 @@
 import json
+import random
+
 
 def get_user_name():
 
     try:
 
-        global fname
-        
-        fname = input("Enter your first Name : ")
-        lname = input("Enter your last Name : ")
-        age = int(input("Enter your Age : "))
-        num = int(input("Enter your Number : "))
-        district = input("Enter your District name : ")
-        state = input("Enter your State name : ")
+        user_data = {}     
+        user_data["account_num"] = random.randint(1,10000000000)   
+        user_data['fname'] = input("Enter your first Name : ")
+        user_data["lname"] = input("Enter your last Name : ")
+        user_data["age"] = int(input("Enter your Age : "))
+        user_data["num"] = int(input("Enter your Number : "))
+        user_data["district"] = input("Enter your District name : ")
+        user_data["state"] = input("Enter your State name : ")
 
     except ValueError:
         print("Kindly insert correct value!!! ")
@@ -19,14 +21,14 @@ def get_user_name():
         print("Kindly insert correct value!!! ")
 
 
-    user_data = {
-        "fname" : fname,
-        "lname" : lname,
-        "age" : age,
-        "num" : num,
-        "district" : district,
-        "state" : state,
-    }
+    # user_data = {
+    #     "fname" : fname,
+    #     "lname" : lname,
+    #     "age" : age,
+    #     "num" : num,
+    #     "district" : district,
+    #     "state" : state,
+    # }
 
     return user_data
 
