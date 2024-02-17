@@ -46,5 +46,7 @@ def insert_user_data(user_data, file_name="./database/user_data.json"):
     with open(file_name, "w") as file:
         json.dump(data, file, indent=9)
 
+    return file_name
+
 
 
