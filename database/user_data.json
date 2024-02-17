@@ -1,61 +1,29 @@
 [
          {
+                  "account_num": 5008986672,
                   "fname": "foo",
                   "lname": "boo",
                   "age": 21,
-                  "num": 222222222222,
-                  "district": "vellore",
+                  "num": 987654321,
+                  "district": "vlr",
                   "state": "tn"
          },
          {
-                  "fname": "hello",
-                  "lname": "word",
-                  "age": 22,
-                  "num": 1234567890,
-                  "district": "vellore",
-                  "state": "tamil nadu"
-         },
-         {
-                  "fname": "Test",
-                  "lname": "1",
-                  "age": 19,
-                  "num": 1234567890,
-                  "district": "banglore",
-                  "state": "karnataka"
-         },
-         {
-                  "fname": "suriya",
-                  "lname": "bro",
-                  "age": 12,
-                  "num": 345678984,
-                  "district": "banglore",
-                  "state": "ka"
-         },
-         {
-                  "account_num": 414204974,
-                  "fname": "raju",
-                  "lname": "bai",
-                  "age": 87,
-                  "num": 124456789876,
-                  "district": "mumbai",
-                  "state": "hy"
-         },
-         {
-                  "account_num": 1813540133,
+                  "account_num": 9063355152,
                   "fname": "ram",
                   "lname": "key",
-                  "age": 34,
-                  "num": 858943596,
-                  "district": "kovi",
+                  "age": 23,
+                  "num": 232253647,
+                  "district": "vlr",
                   "state": "tn"
          },
          {
-                  "account_num": 3207144409,
-                  "fname": "selva",
+                  "account_num": 8262667955,
+                  "fname": "prem",
                   "lname": "kumar",
-                  "age": 23,
-                  "num": 874356436594,
-                  "district": "kovi",
-                  "state": "TN"
+                  "age": 20,
+                  "num": 445547869889,
+                  "district": "tt",
+                  "state": "tn"
          }
 ]

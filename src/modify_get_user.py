@@ -1,58 +1,59 @@
 import json
-from get_user_data import insert_user_data{insert_user_data(user_data={})}
 
-def load_user_data(file_name="../database/user_data.json"):
-    try:
-        with open(file_name, "r") as file:
-            data = json.load(file)
-        return data
-    except FileNotFoundError:
-        return []
 
-def find_user_by_account_num(account_num, user_data):
-    for user in user_data:
-        if user["account_num"] == account_num:
-            return user
-    return None
+def load_json(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    return data
 
-def modify_user_data(account_num, file_name="../database/user_data.json"):
-    user_data = load_user_data(file_name)
+def save_json(file_path, data):
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=2)
 
-    user_to_modify = find_user_by_account_num(account_num, user_data)
+def modify_user_data(file_path, account_num, new_fname):
+    data = load_json(file_path)
 
-    if user_to_modify:
-        print(f"User found with account number {account_num}.")
-        print("Current user data:")
-        print(json.dumps(user_to_modify, indent=4))
+    # Modify the user data
+    for user in data:
+        if account_num_to_update == account_num:
+            user['fname'] = new_fname
+            break
+        else:
+            print("Data not found")
 
-        # Modify user data
-        new_fname = input("Enter new first name (press Enter to keep current): ")
-        user_to_modify["fname"] = new_fname if new_fname else user_to_modify["fname"]
-
-        new_lname = input("Enter new last name (press Enter to keep current): ")
-        user_to_modify["lname"] = new_lname if new_lname else user_to_modify["lname"]
-
-        new_age = input("Enter new age (press Enter to keep current): ")
-        user_to_modify["age"] = int(new_age) if new_age else user_to_modify["age"]
-
-        new_num = input("Enter new number (press Enter to keep current): ")
-        user_to_modify["num"] = int(new_num) if new_num else user_to_modify["num"]
-
-        new_district = input("Enter new district name (press Enter to keep current): ")
-        user_to_modify["district"] = new_district if new_district else user_to_modify["district"]
-
-        new_state = input("Enter new state name (press Enter to keep current): ")
-        user_to_modify["state"] = new_state if new_state else user_to_modify["state"]
-
-        # Save modified data back to the file
-        with open(file_name, "w") as file:
-            json.dump(user_data, file, indent=9)
-        
-        print("User data modified successfully.")
-    else:
-        print(f"User not found with account number {account_num}.")
+    save_json(file_path, data)
 
 if __name__ == "__main__":
-    account_num_to_modify = int(input("Enter the account number of the user to modify: "))
-    modify_user_data(account_num_to_modify)
+    file_path = '../database/user_data.json'
 
+    account_num_to_update = input("Enter the account number to update: ")
+    
+    print("1.) First Name")
+    print("2.) Last Name")
+    print("3.) Age")
+    print("4.) Number")
+    print("5.) District")
+    print("6.) State")
+    
+    modify = input("Which data if you want to change enter number : ")
+
+    if modify == "1" :
+        new_fname = input("Enter the new first name : ")
+    elif modify == 2 :
+        new_lname = input("Enter the new last name : ")
+    elif modify == 3 :
+        new_age = input("Enter the new Age : ")
+    elif modify == 4 :
+        new_num = input("Enter the new Number : ")
+    elif modify == 5 :
+        new_district = input("Enter the new District : ")
+    elif modify == 3 :
+        new_state = input("Enter the new State : ")
+    else:
+        print("Invalid input!!!")
+
+
+
+    modify_user_data(file_path, account_num_to_update, modify_data)
+
+    print(f"User data for account_num {account_num_to_update} updated successfully.")
