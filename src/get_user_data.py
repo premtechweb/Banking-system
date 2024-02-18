@@ -14,21 +14,12 @@ def get_user_name():
         user_data["num"] = int(input("Enter your Number : "))
         user_data["district"] = input("Enter your District name : ")
         user_data["state"] = input("Enter your State name : ")
+        user_data["balance"] = input("Enter your Amount : ")
 
     except ValueError:
         print("Kindly insert correct value!!! ")
     except UnboundLocalError:
         print("Kindly insert correct value!!! ")
-
-
-    # user_data = {
-    #     "fname" : fname,
-    #     "lname" : lname,
-    #     "age" : age,
-    #     "num" : num,
-    #     "district" : district,
-    #     "state" : state,
-    # }
 
     return user_data
 
