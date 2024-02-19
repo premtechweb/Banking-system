@@ -1,76 +1,22 @@
 [
   {
-    "account_num": 9681285983,
-    "fname": "100",
-    "lname": "fun",
-    "age": 21,
-    "num": 1214234345,
-    "district": "vlr",
-    "state": "tn"
-  },
-  {
-    "account_num": 142391929,
-    "fname": "sky",
-    "lname": "boo",
-    "age": 32,
-    "num": 345345456567,
-    "district": "tt",
-    "state": "tn"
-  },
-  {
-    "account_num": 1735858451,
-    "fname": "hello",
-    "lname": "bro",
-    "age": "3",
-    "num": "1343254346",
-    "district": "kkr",
-    "state": "tn"
-  },
-  {
-    "account_num": 1525553042,
-    "fname": "fun",
-    "lname": "mman",
-    "age": "22",
-    "num": "34346547567",
-    "district": "rio",
-    "state": "rio"
-  },
-  {
-    "account_num": 6707452834,
-    "fname": "captian",
-    "lname": "amecrica",
-    "age": "43",
-    "num": "23534646",
-    "district": "sf",
-    "state": "usa"
-  },
-  {
-    "account_num": 390555284,
-    "fname": "prem",
-    "lname": "kumar",
-    "age": "21",
-    "num": "45656768734",
-    "district": "tt",
-    "state": "tn"
-  },
-  {
-    "account_num": 4959236567,
-    "fname": "prem",
-    "lname": "tech",
-    "age": 10,
-    "num": 3435446573,
-    "district": "tir",
-    "state": "tn",
-    "balance": "2000"
-  },
-  {
-    "account_num": 1284553133,
-    "fname": "naresh",
-    "lname": "tech",
-    "age": 21,
-    "num": 5346545,
+    "account_num": 6197576095,
+    "fname": "super",
+    "lname": "man",
+    "age": 33,
+    "num": 4357456463456,
     "district": "vlr",
     "state": "tn",
-    "balance": "6000000"
+    "balance": "66000"
+  },
+  {
+    "account_num": 3003661055,
+    "fname": "Iron",
+    "lname": "Man",
+    "age": 45,
+    "num": 35587433,
+    "district": "vlr",
+    "state": "tn",
+    "balance": "10000000000"
   }
 ]

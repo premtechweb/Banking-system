@@ -1,8 +1,6 @@
 import json
 import os
 
-
-
 def load_json(file_path):
     abs_path = os.path.abspath(file_path)
     print("Attempting to load JSON from:", abs_path)
@@ -33,4 +31,3 @@ def modify_user_data(file_path, account_num, new_fname, new_lname, new_age, new_
             break
 
     save_json(file_path, data)
-

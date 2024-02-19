@@ -3,15 +3,18 @@ from src.get_user_data import *
 from src.modify_get_user import *
 from src.depsoit_amount import *
 from src.block_user_data import *
+from src.check_user_balance import *
+from src.my_profile import *
+from src.clear import *
 
 def main():
 
-    os.system("cls")
+    os_name()
 
     try:
         print("1.) New User")
         print("2.) Existing User")
-        print("3.) Deopsit")
+        print("3.) Deposit")
         print("4.) Exit")
 
         choice = int(input("Enter Your Option : "))
@@ -23,7 +26,7 @@ def main():
             print("Data added successfully...")
 
         elif choice == 2:
-            os.system('cls')
+            os_name()
             print("Existing User...")
 
             print("1.) My Account")
@@ -36,13 +39,20 @@ def main():
 
             if ex_user == 1:
                 print("My Account")
+                account_number_to_search = int(input("Enter your Account Number : "))
+                json_file_path = "./database/user_data.json"
+
+                get_user_data_by_account_number(account_number_to_search, json_file_path)
 
             elif ex_user == 2:
                 print("My Balance")
+                account_number_to_search = int(input("Enter your Account Number : "))
+                json_file_path = "./database/user_data.json"
+
+                get_balance_by_account_number(account_number_to_search, json_file_path)
 
             elif ex_user == 3:
                 print("Account Modify")
-                                
                 if __name__ == "__main__":
                     file_path = './database/user_data.json'
 
@@ -59,38 +69,32 @@ def main():
 
                     print(f"User data for account_num {account_num_to_update} updated successfully.")
 
-
             elif ex_user == 4:
                 print("Account Block")
                                 
-                if __name__ == "__main__":
-                    file_path = '../database/user_data.json'
-
-                    # Get the account number to delete from user input or any other source
-                    account_num_to_delete = input("Enter the account number to delete: ")
-
-                    delete_user_by_account_num(file_path, account_num_to_delete)
-
-                    print(f"User data with account_num {account_num_to_delete} deleted successfully.")
-
-            
-            elif ex_user == 5:
-                main()
-            
-
-        elif choice == 3:
-            print("Deopsit...")
-            if __name__ == "__main__":
                 file_path = './database/user_data.json'
 
-                account_num_to_update = input("Enter the account number to update: ")
+                # Get the account number to delete from user input or any other source
+                account_num_to_delete = input("Enter the account number to delete: ")
 
-                new_balance = input("Enter the Balance : ")
-                    
-                modify_user_data(file_path, account_num_to_update, new_balance)
+                delete_user_by_account_num(file_path, account_num_to_delete)
 
-                print(f"User data for account_num {account_num_to_update} updated successfully.")
+                print(f"User data with account_num {account_num_to_delete} deleted successfully.")
 
+            elif ex_user == 5:
+                main()
+
+        elif choice == 3:
+            print("Deposit...")
+            
+            file_path = './database/user_data.json'
+
+            account_num_to_update = input("Enter the account number to update: ")
+            new_balance = input("Enter the Balance : ")
+                
+            modify_user_data(file_path, account_num_to_update, new_balance)
+
+            print(f"User data for account_num {account_num_to_update} updated successfully.")
 
         elif choice == 4:
             print("Exiting...")
@@ -108,5 +112,5 @@ def main():
         print("Exiting..")
         exit()
 
-main()
-
+if __name__ == "__main__":
+    main()
