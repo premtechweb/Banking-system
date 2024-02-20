@@ -1,23 +1,16 @@
-import os
-from src.get_user_data import *
-from src.modify_get_user import *
-from src.depsoit_amount import *
-from src.block_user_data import *
-from src.check_user_balance import *
-from src.my_profile import *
-from src.clear import *
+from lib.__import__ import *
 
 def main():
 
     os_name()
 
     try:
-        print("1.) New User")
-        print("2.) Existing User")
-        print("3.) Deposit")
-        print("4.) Exit")
+        print(f"{green}1.) New User")
+        print(f"{green}2.) Existing User")
+        print(f"{green}3.) Deposit")
+        print(f"{red}4.) Exit")
 
-        choice = int(input("Enter Your Option : "))
+        choice = int(input(f"{blue}Enter Your Option : "))
 
         if choice == 1:        
             user_data = get_user_name()
