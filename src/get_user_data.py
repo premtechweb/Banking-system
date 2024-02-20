@@ -1,5 +1,6 @@
 import json
 import random
+from lib.__import__ import *
 
 
 def get_user_name():
