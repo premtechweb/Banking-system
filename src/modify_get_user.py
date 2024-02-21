@@ -1,6 +1,7 @@
 import json
 import os
 from lib.__import__ import *
+from lib.color import *
 
 def load_json(file_path):
     abs_path = os.path.abspath(file_path)

@@ -1,7 +1,7 @@
 import json
 import random
 from lib.__import__ import *
-
+from lib.color import *
 
 def get_user_name():
 

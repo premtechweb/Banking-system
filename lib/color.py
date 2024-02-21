@@ -25,5 +25,3 @@ print(f"{reset}This color is reset")
 
 
 
-
-
