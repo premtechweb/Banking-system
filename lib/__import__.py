@@ -1,4 +1,3 @@
-import os
 from src.get_user_data import *
 from src.modify_get_user import *
 from src.depsoit_amount import *

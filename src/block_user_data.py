@@ -1,5 +1,6 @@
 import json
-
+from lib.__import__ import *
+from lib.color import *
 
 def load_json(file_path):
     with open(file_path, 'r') as file:
