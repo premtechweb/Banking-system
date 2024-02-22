@@ -1,9 +1,13 @@
 import json
 import random
+import datetime
 from lib.__import__ import *
 from lib.color import *
 
+
 def get_user_name():
+
+    dt = datetime.datetime.now()
 
     try:
 
@@ -16,6 +20,8 @@ def get_user_name():
         user_data["district"] = input("Enter your District name : ")
         user_data["state"] = input("Enter your State name : ")
         user_data["balance"] = input("Enter your Amount : ")
+        user_data["Date"] = dt.strftime("%d-%m-%Y")
+        user_data["Time"] = dt.strftime("%H:%M:%S")
 
     except ValueError:
         print("Kindly insert correct value!!! ")
