@@ -1,6 +1,6 @@
 <p align=center>
-
-<p align='center'>This Tool Developed By <br> <a herf="https://www.instagram.com/the_naresh_offcial/">@thenareshofficial</p>
+<u>Welcome</u>
+</p>
 
 ##  This project provides a user-friendly interface for managing bank accounts, including creating accounts, depositing and withdrawing funds, checking account balances, listing account holders, closing accounts, and modifying account details etc...
 
@@ -33,7 +33,7 @@ $git clone https://github.com/theNareshofficial/Banking-system.git
 $cd Banking-system
 
 #Install the  Banking-system requirements
-$python3 -m pip install -r requirements. txt
+$python3 -m pip install -r requirements.txt
 
 #Run the program
 $python main.py 
